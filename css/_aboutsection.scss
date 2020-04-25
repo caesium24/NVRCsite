@@ -1,0 +1,54 @@
+.about-showcase {
+    display: flex;
+    background-image: url("../img/aboutback.bmp");
+    background-color: $white;
+    height: 600px;
+    width: 100%;
+    margin-top: -10px;
+    padding-top: 0;
+    justify-content: left;
+}
+
+.about-title {
+    font-size: 4vw;
+    color: $white;
+    margin-top: 20px;
+    margin-left: 80px;
+    border-bottom: solid $darkred 2px;
+}
+
+.about-content {
+    font-size: 1vw;
+    margin-left: 80px;
+    color: $white;
+}
+
+.about-card {
+    z-index: 3;
+    width: 500px;
+    height: 350px;
+    background-color: $mediumblue;
+    transition: width 1s ease-in;
+    transition: height 1s ease-in;
+    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    align-self: center;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+.big-card {
+    z-index: 3;
+    width: 700px;
+    height: 550px;
+    background-color: $mediumblue;
+    transition: height 1s ease;
+    transition: width 1s ease;
+    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    align-self: center;
+    margin-left: 400px;
+    margin-top: 100px;
+}

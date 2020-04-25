@@ -1,0 +1,74 @@
+.showcase {
+    width: 100%;
+    height: auto;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+}
+
+.top-left {
+    background-image: url("../img/datacenter.jpg");
+    background-size: cover;
+    display: flex;
+    transition: width .5s ease-in-out;
+    width: 49.8%;
+    height: 60vh;
+    overflow-x: hidden;
+    justify-content: center;
+    align-content: center
+}
+
+.top-left:hover {
+    background-image: url("../img/datacenter.jpg");
+    background-size: cover;
+    transition: width 1s ease-in-out;
+    width: 200%;
+    height: 60vh;
+}
+
+.top-left h1 {
+    font-size: 3vw;
+    color: $lightred;
+    align-self: center;
+}
+
+.top-line {
+    width: .4%;
+    height: 60vh;
+    background: $darkred;
+}
+
+.top-right {
+    display: flex;
+    background-image: url("../img/test9.jpg");
+    width: 49.8%;
+    transition: width .5s ease-in-out;
+    height: 60vh;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    h1 {
+        font-size: 3vw;
+        color: $mediumblue;
+        align-self: center;
+    }
+}
+
+.top-right:hover {
+    background-image: url("../img/test9.jpg");
+    width: 200%;
+    transition: width 1s ease-in-out;
+    height: 60vh;
+    background-size: cover;
+}
+
+.showcase-textbox {
+    width: 43%;
+}
+
+.first {
+    display: flex;
+    overflow-x: hidden;
+}

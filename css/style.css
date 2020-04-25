@@ -1,0 +1,553 @@
+/*
+    Theme Name: NVRC
+    Author: Eshton Brogan
+    Version: 1.0
+*/
+
+
+/*General element CSS Styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+
+/*Logo Styling*/
+
+
+/*Navigation Styling*/
+
+.navbar {
+    z-index: 4;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    padding-bottom: 0rem;
+    margin-top: -1.8vh;
+    margin-bottom: -1vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 45%;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.logo-img {
+    height: 3.5rem;
+    width: 7rem;
+    position: relative;
+    top: 1.5rem;
+    right: 15vw;
+}
+
+#logo-id {
+    font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #258afe;
+}
+
+.nav-mid {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: #201C60;
+    width: 55%;
+    height: 100%;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #38347A;
+    width: 5%;
+    height: 100%;
+}
+
+.nav-links-left {
+    padding-top: 2vh;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    position: relative;
+    top: 1rem;
+}
+
+.nav-links-left a {
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 0rem;
+    transition: border-color 0.5s;
+    color: #707070;
+    font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    position: relative;
+}
+
+.nav-links-mid {
+    padding-top: 2vh;
+    padding-left: .8vw;
+    padding-right: .8vw;
+    position: relative;
+    top: 1rem;
+}
+
+.nav-links-mid a {
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 0rem;
+    transition: border-color 0.5s;
+    color: #FFFFFF;
+    font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.nav-links-right {
+    position: relative;
+    top: 2.15rem;
+}
+
+.nav-links-right a {
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 0rem;
+    transition: border-color 0.5s;
+    color: #FFFFFF;
+    font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+
+/*Mobile Menu*/
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #38347A;
+}
+
+
+/*Footer Styling*/
+
+.footer-con {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    padding-bottom: 0rem;
+    margin-top: -1.8vh;
+    position: relative;
+    bottom: 0;
+}
+
+.foot-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 5%;
+    background-color: #38347A;
+}
+
+.icofont-facebook {
+    font-size: 2.5vw;
+    color: #A54146;
+    padding-bottom: 1.5vh;
+}
+
+.icofont-linkedin {
+    font-size: 2.5vw;
+    color: #A54146;
+    padding-top: 1.5vh;
+}
+
+.foot-mid {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: #201C60;
+    width: 70%;
+}
+
+.foot-right {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: #842428;
+    width: 25%;
+}
+
+.contact {
+    color: #FFFFFF;
+    font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-top: .7vh;
+    margin-left: -1.2vw;
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: -1.5em 0 0 -1.2vw;
+    width: 60%;
+    padding: 0;
+}
+
+.contact-icons {
+    font-size: 2.8rem;
+    margin-left: -1vw;
+    color: #201C60;
+    margin-bottom: 0;
+}
+
+.contact-info {
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 0;
+}
+
+
+/*Homepage Styling*/
+
+.showcase {
+    width: 100%;
+    height: auto;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+}
+
+.top-left {
+    background-image: url("../img/datacenter.jpg");
+    background-size: cover;
+    display: flex;
+    transition: width .5s ease-in-out;
+    width: 49.8%;
+    height: 60vh;
+    overflow-x: hidden;
+    justify-content: center;
+    align-content: center
+}
+
+.top-left:hover {
+    background-image: url("../img/datacenter.jpg");
+    background-size: cover;
+    transition: width 1s ease-in-out;
+    width: 200%;
+    height: 60vh;
+}
+
+.top-left h1 {
+    font-size: 3vw;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+.top-line {
+    width: .4%;
+    height: 60vh;
+    background: #842428;
+}
+
+.top-right {
+    display: flex;
+    background-image: url("../img/test9.jpg");
+    width: 49.8%;
+    transition: width .5s ease-in-out;
+    height: 60vh;
+    background-size: cover;
+    justify-content: center;
+    align-content: center
+}
+
+.top-right h1 {
+    font-size: 3vw;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+.top-right:hover {
+    background-image: url("../img/test9.jpg");
+    width: 200%;
+    transition: width 1s ease-in-out;
+    height: 60vh;
+    background-size: cover;
+}
+
+.showcase-textbox {
+    width: 43%;
+}
+
+.first {
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+/* About Showcase */
+
+.about-showcase {
+    display: flex;
+    background-image: url("../img/aboutback.bmp");
+    background-color: #FFFFFF;
+    height: 600px;
+    width: 100%;
+    margin-top: -10px;
+    padding-top: 0;
+    justify-content: left;
+}
+
+.about-title {
+    font-size: 4vw;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 80px;
+    border-bottom: solid #842428 2px;
+}
+
+.about-content {
+    font-size: 1vw;
+    margin-left: 80px;
+    color: #FFFFFF;
+}
+
+.about-card {
+    z-index: 3;
+    width: 500px;
+    height: 350px;
+    background-color: #38347A;
+    transition: width 1s ease-in;
+    transition: height 1s ease-in;
+    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    align-self: center;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+.big-card {
+    z-index: 3;
+    width: 700px;
+    height: 550px;
+    background-color: #38347A;
+    transition: height 1s ease;
+    transition: width 1s ease;
+    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    align-self: center;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+
+/* Solutions Showcase */
+
+.solutions-showcase {
+    background-image: url("../img/about.bmp");
+    background-color: #FFFFFF;
+    height: 900px;
+    width: 100%;
+}
+
+.solutions-text {
+    width: 32%;
+}
+
+.solutions-title {
+    font-size: 4vw;
+    color: #38347A;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-bottom: 150px;
+    border-bottom: solid #842428 2px;
+}
+
+.container {
+    height: 350px;
+    width: 100%;
+    top: 60px;
+    left: calc(50% - 200px);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    height: 380px;
+    width: 340px;
+    background: #38347A;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#38347A', GradientType=1);
+    border-radius: 10px;
+    -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    transform: translateY(-60px);
+    transition: 0.4s ease-out;
+    height: 480px;
+    width: 440px;
+}
+
+.card:hover~.card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.title {
+    color: #FFFFFF;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+}
+
+.emptybar {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: #201C60;
+    transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+    width: 160px;
+    transition: 0.4s ease-out;
+}
+
+.stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+
+.card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+
+.service-card {
+    width: 300px;
+    height: 250px;
+    background-color: #FFFFFF;
+    align-self: center;
+    margin-left: 100px;
+    transition: height 0.4s ease-out;
+    transition: width 0.4s ease-out;
+    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.service-card:hover {
+    width: 305px;
+    height: 250px;
+    align-self: center;
+    margin-left: 100px;
+    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+    box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width:1200px) {
+    .logo-img {
+        height: 3.5rem;
+        width: 7rem;
+        position: relative;
+        top: 1.5rem;
+        right: 10vw;
+    }
+    #logo-id {
+        font-family: Mukta, Proxima Nova, Roboto, Droid, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #258afe;
+    }
+}
+
+@media screen and (max-width:768px) {}

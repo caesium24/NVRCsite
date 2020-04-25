@@ -1,0 +1,81 @@
+.footer-con {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    padding-bottom: 0rem;
+    margin-top: -1.8vh;
+    position: relative;
+    bottom: 0;
+}
+
+.foot-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 5%;
+    background-color: $mediumblue;
+}
+
+.icofont-facebook {
+    font-size: 2.5vw;
+    color: $lightred;
+    padding-bottom: 1.5vh;
+}
+
+.icofont-linkedin {
+    font-size: 2.5vw;
+    color: $lightred;
+    padding-top: 1.5vh;
+}
+
+.foot-mid {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: $darkblue;
+    width: 70%;
+}
+
+.foot-right {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: $darkred;
+    width: 25%;
+}
+
+.contact {
+    color: $white;
+    font-family: $fonts;
+    font-size: 1.5rem;
+    margin-top: .7vh;
+    margin-left: -1.2vw;
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: -1.5em 0 0 -1.2vw;
+    width: 60%;
+    padding: 0;
+}
+
+.contact-icons {
+    font-size: 2.8rem;
+    margin-left: -1vw;
+    color: $darkblue;
+    margin-bottom: 0;
+}
+
+.contact-info {
+    display: inline-block;
+    color: $white;
+    font-family: $fonts;
+    font-size: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 0;
+}

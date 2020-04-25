@@ -1,0 +1,47 @@
+/*
+    Theme Name: NVRC
+    Author: Eshton Brogan
+    Version: 1.0
+*/
+
+//includes
+@import 'vars';
+@import 'nav';
+@import 'mobilenav';
+@import 'showcase';
+@import 'aboutsection';
+@import 'solutions';
+@import 'footer';
+@import 'login';
+//general styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    font-family: $fonts;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}

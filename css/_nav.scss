@@ -1,0 +1,108 @@
+.navbar {
+    z-index: 4;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    padding-bottom: 0rem;
+    margin-top: -1.8vh;
+    margin-bottom: -1vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 45%;
+    background-color: $white;
+    height: 100%;
+}
+
+.logo-img {
+    align-content: center;
+    height: 3.5rem;
+    width: 7rem;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+}
+
+#logo-id {
+    font-family: $fonts;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $lightblue;
+}
+
+.nav-mid {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: $darkblue;
+    width: 55%;
+    height: 100%;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: $mediumblue;
+    width: 5%;
+    height: 100%;
+}
+
+.nav-links-left {
+    padding-top: 2vh;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    position: relative;
+    top: 1rem;
+}
+
+.nav-links-left a {
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 0rem;
+    transition: border-color 0.5s;
+    color: $gray;
+    font-family: $fonts;
+    font-size: 1rem;
+    position: relative;
+}
+
+.nav-links-mid {
+    padding-top: 2vh;
+    padding-left: .8vw;
+    padding-right: .8vw;
+    position: relative;
+    top: 1rem;
+}
+
+.nav-links-mid a {
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 0rem;
+    transition: border-color 0.5s;
+    color: $white;
+    font-family: $fonts;
+    font-size: 1rem;
+}
+
+.nav-links-right {
+    position: relative;
+    top: 2.15rem;
+}
+
+.nav-links-right a {
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 0rem;
+    transition: border-color 0.5s;
+    color: $white;
+    font-family: $fonts;
+    font-size: 1rem;
+}
