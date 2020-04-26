@@ -1,54 +1,73 @@
 .about-showcase {
     display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
     background-image: url("../img/aboutback.bmp");
     background-color: $white;
-    height: 600px;
+    height: auto;
     width: 100%;
     margin-top: -10px;
     padding-top: 0;
     justify-content: left;
 }
 
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url("../img/aboutback.bmp");
+    background-color: $white;
+    height: 800px;
+    width: 100%;
+    padding-top: 0;
+    justify-content: space-evenly;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/aboutback.bmp");
+    background-color: $white;
+    height: 800px;
+    width: 50%;
+    justify-content: center;
+}
+
 .about-title {
-    font-size: 4vw;
+    font-size: 6rem;
     color: $white;
-    margin-top: 20px;
-    margin-left: 80px;
+    margin-top: 1vh;
+    margin-left: 4vw;
     border-bottom: solid $darkred 2px;
 }
 
 .about-content {
-    font-size: 1vw;
+    font-size: 1.5rem;
     margin-left: 80px;
     color: $white;
 }
 
 .about-card {
-    z-index: 3;
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 500px;
     background-color: $mediumblue;
-    transition: width 1s ease-in;
-    transition: height 1s ease-in;
+    transition: all 1s ease-in;
     -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
     -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
     box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    align-self: center;
-    margin-left: 400px;
+    align-self: flex-start;
     margin-top: 100px;
 }
 
 .big-card {
-    z-index: 3;
-    width: 700px;
-    height: 550px;
+    width: 800px;
+    height: 600px;
     background-color: $mediumblue;
-    transition: height 1s ease;
-    transition: width 1s ease;
+    transition: all 1s ease;
     -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
     -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
     box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    align-self: center;
-    margin-left: 400px;
+    align-self: flex-start;
     margin-top: 100px;
+    // margin-left: 2vw;
 }

@@ -1,74 +1,93 @@
-.showcase {
-    width: 100%;
-    height: auto;
-}
-
-.top-container {
-    display: flex;
-    justify-content: center;
-}
-
-.top-left {
-    background-image: url("../img/datacenter.jpg");
-    background-size: cover;
-    display: flex;
-    transition: width .5s ease-in-out;
-    width: 49.8%;
-    height: 60vh;
-    overflow-x: hidden;
-    justify-content: center;
-    align-content: center
-}
-
-.top-left:hover {
-    background-image: url("../img/datacenter.jpg");
-    background-size: cover;
-    transition: width 1s ease-in-out;
-    width: 200%;
-    height: 60vh;
-}
-
-.top-left h1 {
-    font-size: 3vw;
-    color: $lightred;
-    align-self: center;
-}
-
-.top-line {
-    width: .4%;
-    height: 60vh;
-    background: $darkred;
-}
-
-.top-right {
-    display: flex;
-    background-image: url("../img/test9.jpg");
-    width: 49.8%;
-    transition: width .5s ease-in-out;
-    height: 60vh;
-    background-size: cover;
-    justify-content: center;
-    align-content: center;
-    h1 {
-        font-size: 3vw;
-        color: $mediumblue;
-        align-self: center;
-    }
-}
-
-.top-right:hover {
-    background-image: url("../img/test9.jpg");
-    width: 200%;
-    transition: width 1s ease-in-out;
-    height: 60vh;
-    background-size: cover;
-}
-
-.showcase-textbox {
-    width: 43%;
-}
-
-.first {
-    display: flex;
-    overflow-x: hidden;
-}
+        @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, .076, 1)) {
+            transition: $property $duration $ease;
+        }
+        
+        .showcase {
+            width: 100%;
+            height: auto;
+        }
+        
+        .top-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .top-left {
+            background-image: url("../img/datacenter.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            transition: width .5s ease-in-out;
+            width: 49.95%;
+            height: 600px;
+            overflow-x: hidden;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+        }
+        
+        .top-left h1 {
+            font-size: 3rem;
+            color: $white;
+            align-self: center;
+        }
+        
+        .top-line {
+            width: .1%;
+            height: 600px;
+            background: $darkred;
+        }
+        
+        .top-right {
+            display: flex;
+            flex-direction: column;
+            background-image: url("../img/test9.jpg");
+            width: 49.95%;
+            transition: width .5s ease-in-out;
+            overflow-x: hidden;
+            height: 600px;
+            background-size: cover;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+            h1 {
+                font-size: 3rem;
+                color: $white;
+                align-self: center;
+            }
+        }
+        
+        .showcase-textbox {
+            width: 43%;
+        }
+        
+        .show-btn {
+            opacity: 0;
+            width: fit-content;
+            border-radius: 6px;
+            border: $white 3px solid;
+            align-self: center;
+            display: inline-block;
+            cursor: pointer;
+            color: $white;
+            transition: all 1s ease-in-out;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #201c60;
+        }
+        
+        .show-btn:hover {
+            background-color: $darkblue;
+        }
+        
+        .show-btn:active {
+            position: relative;
+            top: 1px;
+        }
+        
+        .first {
+            display: flex;
+            overflow-x: hidden;
+        }

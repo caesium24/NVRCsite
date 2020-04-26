@@ -4,15 +4,39 @@
 
 .burger {
     div {
-        width: 3rem;
-        height: .3vh;
+        width: 3.5rem;
+        height: .5vh;
         background-color: $darkblue;
         margin: .3vh;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
 }
 
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-2vw, -1vw);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-2vw, -1vw);
+}
+
+.mobile-link-box {
+    display: none;
+}
+
+.login-icon {
+    display: none
+}
+
 @media only screen and (max-width: 1000px) {
+    .body {
+        padding-top: 8%;
+    }
     .burger {
         display: block;
         position: absolute;
@@ -46,16 +70,86 @@
     }
     .logo-img {
         align-self: flex-start;
-        height: 3.5rem;
-        width: 7rem;
-        margin-top: 2vh;
-        margin-left: -40vw;
+        height: 4rem;
+        width: 8rem;
+        margin-top: 3vh;
+        margin-left: -30vw;
+    }
+    .login-icon {
+        display: block;
+        align-self: flex-end;
+        font-size: 3rem;
+        margin-right: -30vw;
+        margin-bottom: 1vh;
     }
     #logo-id {
         font-family: $fonts;
         font-weight: bold;
         font-size: 1.5rem;
         color: $lightblue;
+    }
+    .mobile-link-box {
+        display: flex;
+        z-index: 3;
+        position: fixed;
+        top: -400px;
+        transition: all .4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        padding-top: 6vh;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        height: fit-content;
+        width: 100%;
+        background-color: $white;
+    }
+    .mobile-link-box-active {
+        display: flex;
+        z-index: 3;
+        position: fixed;
+        top: 0px;
+        transition: all .4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        padding-top: 6vh;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        height: fit-content;
+        width: 100%;
+        background-color: $white;
+    }
+    .mobile-links {
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+        padding: 15px;
+    }
+    .nav-links-mob a {
+        text-decoration: none;
+        border-bottom: 1px transparent solid;
+        padding-bottom: 0rem;
+        color: $gray;
+        transition: all .5 ease-in;
+        font-family: $fonts;
+        font-size: 3rem;
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+    }
+    .nav-links-mob:hover a {
+        text-decoration: none;
+        padding-bottom: 0rem;
+        transition: all .5 ease-out;
+        color: $darkred;
+        font-family: $fonts;
+        font-size: 3rem;
+        position: relative;
+        margin: 10px;
+        padding: 10px;
     }
     .nav-mid {
         display: none;
