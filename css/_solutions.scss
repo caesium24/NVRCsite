@@ -1,141 +1,213 @@
-.solutions-showcase {
-    background-image: url("../img/about.bmp");
-    background-color: $white;
-    height: 900px;
-    width: 100%;
-}
-
-.solutions-text {
-    width: 32%;
-}
-
-.solutions-title {
-    font-size: 4vw;
-    color: $mediumblue;
-    margin-top: 30px;
-    margin-left: 80px;
-    margin-bottom: 150px;
-    border-bottom: solid $darkred 2px;
-}
-
-.container {
-    height: 350px;
-    width: 100%;
-    top: 60px;
-    left: calc(50% - 200px);
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    display: flex;
-    height: 380px;
-    width: 340px;
-    background: $mediumblue;
-    border-radius: 10px;
-    -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    /*   margin-left: -50px; */
-    transition: 0.4s ease-out;
-    position: relative;
-    left: 0px;
-}
-
-.card:not(:first-child) {
-    margin-left: -50px;
-}
-
-.card:hover {
-    transform: translateY(-60px);
-    transition: 0.4s ease-out;
-    height: 480px;
-    width: 440px;
-}
-
-.card:hover~.card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
-}
-
-.title {
-    color: $white;
-    font-weight: 300;
-    position: absolute;
-    left: 20px;
-    top: 15px;
-}
-
-.bar {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    height: 5px;
-    width: 150px;
-}
-
-.emptybar {
-    background-color: $white;
-    width: 100%;
-    height: 100%;
-}
-
-.filledbar {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-    width: 0px;
-    height: 100%;
-    background: $darkblue;
-    transition: 0.6s ease-out;
-}
-
-.card:hover .filledbar {
-    width: 160px;
-    transition: 0.4s ease-out;
-}
-
-.stroke {
-    stroke: $white;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    transition: 0.6s ease-out;
-}
-
-.card:hover .stroke {
-    stroke-dashoffset: 100;
-    transition: 0.6s ease-out;
-}
-
-.service-card {
-    width: 300px;
-    height: 250px;
-    background-color: $white;
-    align-self: center;
-    margin-left: 100px;
-    transition: height 0.4s ease-out;
-    transition: width 0.4s ease-out;
-    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    border-radius: 10px;
-    -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    cursor: pointer;
-}
-
-.service-card:hover {
-    width: 305px;
-    height: 250px;
-    align-self: center;
-    margin-left: 100px;
-    -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
-    border-radius: 10px;
-    -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-    box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
-}
+    .services-showcase {
+        background-image: url("../img/about.bmp");
+        background-color: $white;
+        height: 970px;
+        width: 100%;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .services-showcase {
+            background-image: none;
+            background-color: $white;
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+        }
+    }
+    
+    .services-text {
+        width: 32%;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .services-text {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    .services-title {
+        font-size: 4vw;
+        color: $mediumblue;
+        margin-top: 0px;
+        margin-left: 80px;
+        margin-bottom: 20px;
+        border-bottom: solid $darkred 2px;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .services-title {
+            justify-self: center;
+            align-self: center;
+            font-size: 6rem;
+            color: $mediumblue;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            border-bottom: solid $darkred 2px;
+        }
+    }
+    
+    .container {
+        height: 350px;
+        width: 100%;
+        top: 10px;
+        left: calc(50% - 200px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            width: 100%;
+            top: 60px;
+            left: calc(50% - 200px);
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    .card {
+        display: flex;
+        height: 380px;
+        width: 340px;
+        background: $mediumblue;
+        border-radius: 10px;
+        -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+        box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+        /*   margin-left: -50px; */
+        transition: 0.4s ease-out;
+        position: relative;
+        left: 0px;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .card {
+            display: flex;
+            height: 800px;
+            width: 80vw;
+            margin: 10px;
+            background: $mediumblue;
+            border-radius: 10px;
+            -webkit-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+            box-shadow: -8px 7px 62px -36px rgba(0, 0, 0, 1);
+            transition: 0.4s ease-out;
+            position: relative;
+            left: 0px;
+        }
+    }
+    
+    .card:not(:first-child) {
+        margin-left: -50px;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .card:not(:first-child) {
+            margin-left: 0px;
+        }
+    }
+    
+    .card:hover {
+        transform: translateY(-60px);
+        transition: 0.4s ease-out;
+        height: 480px;
+        width: 440px;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .card:hover {
+            transform: translateY(0px);
+            height: 800px;
+            width: 80vw;
+        }
+    }
+    
+    .card:hover~.card {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .card:hover~.card {
+            position: relative;
+            left: 0px;
+        }
+    }
+    
+    .title {
+        color: $white;
+        font-weight: 300;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .title {
+            color: $white;
+            font-size: 3rem;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+        }
+    }
+    
+    .bar {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        height: 5px;
+        width: 150px;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .bar {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            height: 20px;
+            width: 250px;
+        }
+    }
+    
+    .emptybar {
+        background-color: $white;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .filledbar {
+        position: absolute;
+        top: 0px;
+        z-index: 3;
+        width: 0px;
+        height: 100%;
+        background: $darkblue;
+        transition: 0.6s ease-out;
+    }
+    
+    .card:hover .filledbar {
+        width: 160px;
+        transition: 0.4s ease-out;
+    }
+    
+    .stroke {
+        stroke: $white;
+        stroke-dasharray: 360;
+        stroke-dashoffset: 360;
+        transition: 0.6s ease-out;
+    }
+    
+    .card:hover .stroke {
+        stroke-dashoffset: 100;
+        transition: 0.6s ease-out;
+    }

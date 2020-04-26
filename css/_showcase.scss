@@ -24,18 +24,60 @@
             justify-content: center;
             align-content: center;
             cursor: pointer;
+            h1 {
+                font-size: 3rem;
+                transition: all .5s ease-in-out;
+                color: $white;
+                align-self: center;
+            }
+            h2 {
+                font-size: 1.5rem;
+                transition: all .5s ease-in-out;
+                letter-spacing: 1px;
+                color: $white;
+                align-self: center;
+                padding: 0;
+                margin-bottom: -15px;
+            }
         }
         
-        .top-left h1 {
-            font-size: 3rem;
-            color: $white;
-            align-self: center;
+        @media only screen and (max-width: 1000px) {
+            .top-left {
+                background-image: url("../img/datacenter.jpg");
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                transition: width .5s ease-in-out;
+                width: 49.95%;
+                height: 60vh;
+                overflow-x: hidden;
+                justify-content: center;
+                align-content: center;
+                cursor: pointer;
+            }
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .top-left h1 {
+                font-size: 3rem;
+                color: $white;
+                align-self: center;
+                transition: all .5s ease;
+            }
         }
         
         .top-line {
             width: .1%;
             height: 600px;
             background: $darkred;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .top-line {
+                width: .1%;
+                height: 60vh;
+                background: $darkred;
+            }
         }
         
         .top-right {
@@ -52,8 +94,40 @@
             cursor: pointer;
             h1 {
                 font-size: 3rem;
+                transition: all .5s ease-in-out;
                 color: $white;
                 align-self: center;
+            }
+            h2 {
+                font-size: 1.5rem;
+                transition: all .5s ease-in-out;
+                letter-spacing: 1px;
+                color: $white;
+                align-self: center;
+                padding: 0;
+                margin-bottom: -15px;
+            }
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .top-right {
+                display: flex;
+                flex-direction: column;
+                background-image: url("../img/test9.jpg");
+                width: 49.95%;
+                transition: width .5s ease-in-out;
+                overflow-x: hidden;
+                height: 60vh;
+                background-size: cover;
+                justify-content: center;
+                align-content: center;
+                cursor: pointer;
+                h1 {
+                    font-size: 3rem;
+                    transition: all .5s ease;
+                    color: $white;
+                    align-self: center;
+                }
             }
         }
         
@@ -85,6 +159,25 @@
         .show-btn:active {
             position: relative;
             top: 1px;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .show-btn {
+                opacity: 0;
+                width: fit-content;
+                border-radius: 6px;
+                border: $white 6px solid;
+                align-self: center;
+                display: inline-block;
+                cursor: pointer;
+                color: $white;
+                transition: all 1s ease-in-out;
+                font-size: 32px;
+                font-weight: bold;
+                padding: 6px 24px;
+                text-decoration: none;
+                text-shadow: 0px 1px 0px #201c60;
+            }
         }
         
         .first {

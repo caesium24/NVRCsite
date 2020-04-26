@@ -1,8 +1,11 @@
-.footer-con {
+.footer-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url("../img/aboutback.bmp");
     width: 100%;
-    height: 25vh;
+    height: 50vh;
     overflow: hidden;
     padding-bottom: 0rem;
     margin-top: -1.8vh;
@@ -10,72 +13,241 @@
     bottom: 0;
 }
 
-.foot-left {
+.top-ft-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 5%;
-    background-color: $mediumblue;
-}
-
-.icofont-facebook {
-    font-size: 2.5vw;
-    color: $lightred;
-    padding-bottom: 1.5vh;
-}
-
-.icofont-linkedin {
-    font-size: 2.5vw;
-    color: $lightred;
-    padding-top: 1.5vh;
-}
-
-.foot-mid {
-    display: flex;
-    justify-content: flex-end;
     flex-direction: row;
-    background-color: $darkblue;
-    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 0rem;
+    margin-top: -1.8vh;
+    position: relative;
+    bottom: 0;
+    h1 {
+        font-size: 3.5rem;
+        color: $lightred;
+    }
+    p {
+        display: inline;
+        font-size: 1.8rem;
+        margin-left: -15px;
+        color: $white;
+        text-decoration: underline;
+    }
+    .venture {
+        margin-left: -23px;
+    }
 }
 
-.foot-right {
+.quick-links {
     display: flex;
-    justify-content: left;
     flex-direction: column;
-    background-color: $darkred;
-    width: 25%;
+    h3 {
+        font-size: 2rem;
+        text-decoration: underline;
+        color: $white;
+    }
+    li {
+        list-style-type: circle;
+        margin-left: 20px;
+        color: $gray;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $gray;
+    }
 }
 
-.contact {
-    color: $white;
-    font-family: $fonts;
-    font-size: 1.5rem;
-    margin-top: .7vh;
-    margin-left: -1.2vw;
+.ft-services {
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-size: 2rem;
+        text-decoration: underline;
+        color: $white;
+    }
+    li {
+        list-style-type: circle;
+        margin-left: 20px;
+        color: $gray;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $gray;
+    }
 }
 
-hr {
-    display: block;
-    height: 5px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: -1.5em 0 0 -1.2vw;
-    width: 60%;
-    padding: 0;
+.ft-contact {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-size: 2rem;
+        text-decoration: underline;
+        color: $white;
+    }
+    li {
+        list-style-type: circle;
+        margin-left: 20px;
+        font-size: 1.2rem;
+        color: $gray;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $gray;
+    }
 }
 
-.contact-icons {
-    font-size: 2.8rem;
-    margin-left: -1vw;
-    color: $darkblue;
-    margin-bottom: 0;
+.ft-extra {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    h2 {
+        font-size: 1.2rem;
+        color: $white;
+    }
+    li {
+        list-style-type: circle;
+        margin-left: 20px;
+        color: $white;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $white;
+    }
+    .social-icons a {
+        font-size: 6rem;
+        color: $white;
+    }
 }
 
-.contact-info {
-    display: inline-block;
-    color: $white;
-    font-family: $fonts;
-    font-size: 1vw;
-    margin-left: 1vw;
-    margin-bottom: 0;
+@media only screen and (max-width: 1000px) {
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-image: url("../img/aboutback.bmp");
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+        padding-top: 0px;
+        position: relative;
+        bottom: 0;
+    }
+    .top-ft-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 20px;
+        position: relative;
+        h1 {
+            font-size: 6rem;
+            color: $lightred;
+        }
+        p {
+            display: inline;
+            font-size: 3rem;
+            margin-left: -16px;
+            color: $white;
+            text-decoration: underline;
+        }
+        .venture {
+            margin-left: -23px;
+        }
+    }
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3 {
+            font-size: 4.5rem;
+            text-decoration: underline;
+            color: $white;
+        }
+        li {
+            list-style-type: none;
+            margin-left: 20px;
+            color: $gray;
+        }
+        a {
+            text-decoration: none;
+            font-size: 3.2rem;
+            color: $gray;
+        }
+    }
+    .ft-services {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3 {
+            font-size: 4.5rem;
+            text-decoration: underline;
+            color: $white;
+        }
+        li {
+            list-style-type: none;
+            margin-left: 20px;
+            color: $gray;
+        }
+        a {
+            text-decoration: none;
+            font-size: 3.2rem;
+            color: $gray;
+        }
+    }
+    .ft-contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3 {
+            font-size: 4.5rem;
+            text-decoration: underline;
+            color: $white;
+        }
+        li {
+            list-style-type: none;
+            margin-left: 20px;
+            font-size: 3.2rem;
+            color: $gray;
+        }
+        a {
+            text-decoration: none;
+            font-size: 3.2rem;
+            color: $gray;
+        }
+    }
+    .ft-extra {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: column;
+        text-align: center;
+        h2 {
+            font-size: 2.2rem;
+            color: $white;
+        }
+        li {
+            list-style-type: none;
+            margin-left: 20px;
+            color: $white;
+        }
+        a {
+            text-decoration: none;
+            font-size: 3.2rem;
+            color: $white;
+        }
+        .social-icons a {
+            font-size: 8rem;
+            color: $white;
+        }
+    }
 }
