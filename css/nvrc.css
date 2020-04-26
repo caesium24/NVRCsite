@@ -188,7 +188,6 @@
     margin-top: 1vh;
   }
   .navbar {
-    z-index: 4;
     background-color: #FFFFFF;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -213,7 +212,6 @@
     overflow: hidden;
     padding-bottom: 0rem;
     margin-top: -1.8vh;
-    margin-bottom: -1vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
   .nav-left {
@@ -1765,7 +1763,7 @@ span {
 @media only screen and (max-width: 1000px) {
   .content-wrapper {
     width: 100%;
-    height: 170vh;
+    height: 220rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1778,7 +1776,7 @@ span {
             align-items: center;
     background: #5d1d29;
     background: radial-gradient(circle, #5d1d29 0%, #972f43 100%);
-    overflow: hidden;
+    overflow: scroll;
   }
 }
 
