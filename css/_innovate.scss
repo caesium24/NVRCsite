@@ -1,0 +1,107 @@
+.innovate-section {
+    display: flex;
+    background-image: url('../img/innovate-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .innovate-section {
+        display: flex;
+        background-image: url('../img/innovate-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 900px;
+        width: 100%;
+    }
+}
+
+.innovate-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+}
+
+.in-title {
+    align-self: center;
+    font-size: 6rem;
+    color: $white;
+    margin-top: 1vh;
+    margin-left: 4vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .in-title {
+        font-size: 8rem;
+        align-self: center;
+        color: $white;
+        border-bottom: solid $darkred 2px;
+    }
+}
+
+.in-content {
+    font-size: 2rem;
+    font-family: $fonts2;
+    align-self: center;
+    text-align: center;
+    width: 60%;
+    z-index: 2;
+    margin-left: 80px;
+    color: $white;
+    border-top: solid $darkred 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .in-content {
+        font-size: 3rem;
+        text-align: center;
+        color: $white;
+    }
+}
+
+.btn {
+    margin-top: 4rem;
+    width: fit-content;
+    border-radius: 6px;
+    border: $white 3px solid;
+    align-self: center;
+    display: inline-block;
+    cursor: pointer;
+    color: $white;
+    transition: all .2s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #201c60;
+}
+
+.btn:hover {
+    background-color: $darkblue;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .btn {
+        width: fit-content;
+        border-radius: 6px;
+        border: $white 6px solid;
+        align-self: center;
+        display: inline-block;
+        cursor: pointer;
+        color: $white;
+        transition: all .2s ease-in-out;
+        font-size: 32px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #201c60;
+    }
+}

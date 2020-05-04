@@ -19,7 +19,7 @@
             flex-direction: column;
             transition: width .5s ease-in-out;
             width: 49.95%;
-            height: 600px;
+            height: 800px;
             overflow-x: hidden;
             justify-content: center;
             align-content: center;
@@ -68,7 +68,7 @@
         
         .top-line {
             width: .1%;
-            height: 600px;
+            height: 800px;
             background: $darkred;
         }
         
@@ -87,7 +87,7 @@
             width: 49.95%;
             transition: width .5s ease-in-out;
             overflow-x: hidden;
-            height: 600px;
+            height: 800px;
             background-size: cover;
             justify-content: center;
             align-content: center;
@@ -144,7 +144,7 @@
             display: inline-block;
             cursor: pointer;
             color: $white;
-            transition: all 1s ease-in-out;
+            transition: all 0.5s ease-in-out;
             font-size: 15px;
             font-weight: bold;
             padding: 6px 24px;
@@ -171,7 +171,7 @@
                 display: inline-block;
                 cursor: pointer;
                 color: $white;
-                transition: all 1s ease-in-out;
+                transition: all .5s ease-in-out;
                 font-size: 32px;
                 font-weight: bold;
                 padding: 6px 24px;

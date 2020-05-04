@@ -41,7 +41,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    background-color: $darkblue;
+    background-color: $white;
     width: 55%;
     height: 100%;
 }
@@ -49,6 +49,7 @@
 .nav-right {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     background-color: $mediumblue;
     width: 5%;
@@ -70,12 +71,12 @@
     transition: border-color 0.5s;
     color: $gray;
     font-family: $fonts;
-    font-size: 1rem;
+    font-size: 1.3rem;
     position: relative;
 }
 
 .nav-links-mid {
-    padding-top: 2vh;
+    padding-top: 1vh;
     padding-left: .8vw;
     padding-right: .8vw;
     position: relative;
@@ -87,22 +88,23 @@
     border-bottom: 1px transparent solid;
     padding-bottom: 0rem;
     transition: border-color 0.5s;
-    color: $white;
+    color: $gray;
     font-family: $fonts;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .nav-links-right {
-    position: relative;
-    top: 2.15rem;
+    align-self: center;
+    padding-top: .9rem;
 }
 
 .nav-links-right a {
     text-decoration: none;
+    align-self: center;
     border-bottom: 1px transparent solid;
     padding-bottom: 0rem;
     transition: border-color 0.5s;
     color: $white;
     font-family: $fonts;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }

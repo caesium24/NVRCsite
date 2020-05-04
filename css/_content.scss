@@ -1,39 +1,39 @@
 .content-wrapper {
     width: 100%;
-    height: 170vh;
+    height: 90vh;
     display: flex;
+    flex-direction: column;
+    background-image: url(../img/ship-background.jpg);
     opacity: 1;
     justify-content: center;
     align-items: center;
-    background: rgb(93, 29, 41);
-    background: radial-gradient(circle, rgba(93, 29, 41, 1) 0%, rgba(151, 47, 67, 1) 100%);
     overflow: hidden;
 }
 
 @media only screen and (max-width: 1000px) {
     .content-wrapper {
         width: 100%;
-        height: 220rem;
+        height: 90vh;
         display: flex;
         opacity: 1;
         justify-content: center;
         align-items: center;
-        background: rgb(93, 29, 41);
-        background: radial-gradient(circle, rgba(93, 29, 41, 1) 0%, rgba(151, 47, 67, 1) 100%);
+        background-image: url(../img/ship-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         overflow: scroll;
     }
 }
 
 .content-container {
-    color: $white;
+    color: $mediumblue;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    margin-top: -100px;
-    width: 80vw;
+    width: 55vw;
     min-height: 80vh;
+    max-height: fit-content;
     overflow: hidden;
-    background-color: $mediumblue;
+    background-color: $white;
     opacity: 1;
     transition: height 1s ease;
     transition: width 1s ease;
@@ -41,6 +41,7 @@
     -moz-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
     box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
     align-self: center;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -50,10 +51,12 @@
         margin-top: 80px;
         color: $white;
         position: absolute;
-        width: 95vw;
-        min-height: 70vh;
-        overflow: hidden;
-        background-color: $mediumblue;
+        width: 80vw;
+        min-height: 50vh;
+        max-height: auto;
+        margin-bottom: 30px;
+        overflow: scroll;
+        background-color: $white;
         transition: height 1s ease;
         transition: width 1s ease;
         -webkit-box-shadow: -32px 30px 21px -33px rgba(0, 0, 0, 1);
@@ -68,6 +71,8 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    margin-top: 16vh;
+    margin-bottom: 20px;
     .content-list {
         display: flex;
         flex-direction: row;
@@ -76,7 +81,7 @@
         .content-links {
             display: flex;
             a {
-                font-size: 2rem;
+                font-size: 4rem;
                 margin-top: 10px;
                 color: $white;
             }
@@ -89,7 +94,8 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-content: center;
+        align-content: flex-start;
+        margin-top: -1000px;
         .content-list {
             display: flex;
             flex-direction: row;
@@ -106,55 +112,121 @@
     }
 }
 
+.contract-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contract-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.contract-links-li {
+    justify-content: center;
+    a {
+        color: $mediumblue;
+        text-decoration: none;
+        font-family: $fonts2;
+        font-weight: 100;
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+}
+
+.li-current {
+    border-bottom: 2px $lightred solid;
+    a {
+        color: $mediumblue;
+        text-decoration: none;
+        font-family: $fonts2;
+        font-weight: 100;
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+}
+
+.contract-links-li:hover {
+    a {
+        color: $darkred;
+        text-decoration: none;
+        font-family: $fonts2;
+        font-weight: 100;
+        font-size: 1.81rem;
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contract-links-li {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        a {
+            color: $mediumblue;
+            text-decoration: none;
+            font-family: $fonts2;
+            font-weight: 100;
+            font-size: 2.2rem;
+        }
+    }
+}
+
 .content-box {
     display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
     align-content: center;
     justify-content: center;
     .content-text {
         display: flex;
+        text-align: justify;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        .description {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            p {
-                align-self: center;
-                justify-self: center;
-                font-size: 1rem;
-                color: $white;
-            }
-            h2 {
-                align-self: center;
-                text-align: center;
-                justify-self: center;
-                font-size: 2rem;
-                color: #972f43;
-            }
-            li {
-                list-style-type: none;
-                text-align: center;
-                font-size: 1rem;
-                color: $white;
-            }
-            h3 {
-                align-self: center;
-                text-align: center;
-                justify-self: center;
-                font-size: 2rem;
-                color: #972f43;
-            }
-            a {
-                text-decoration: none;
-                font-size: 1rem;
-                color: #972f43;
-                cursor: pointer;
-            }
-            br {
-                display: none;
-            }
+        width: 70%;
+        p {
+            align-self: center;
+            justify-self: center;
+            font-size: 1.4rem;
+            font-family: $fonts2;
+            color: $darkblue;
+        }
+        h2 {
+            align-self: center;
+            text-align: center;
+            justify-self: center;
+            font-size: 3rem;
+            color: #972f43;
+        }
+        li {
+            list-style-type: none;
+            text-align: center;
+            font-size: 1.5rem;
+            color: $mediumblue;
+        }
+        h3 {
+            align-self: center;
+            text-align: center;
+            justify-self: center;
+            font-size: 2rem;
+            color: #972f43;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #972f43;
+            cursor: pointer;
+        }
+        br {
+            display: none;
         }
     }
 }
@@ -169,44 +241,37 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            .description {
-                display: flex;
-                flex-direction: column;
-                width: 95%;
-                align-items: center;
-                justify-content: center;
-                p {
-                    align-self: center;
-                    text-align: center;
-                    justify-self: center;
-                    font-size: 1.8rem;
-                    color: $white;
-                }
-                h2 {
-                    align-self: center;
-                    text-align: center;
-                    justify-self: center;
-                    font-size: 4rem;
-                    color: #972f43;
-                }
-                li {
-                    list-style-type: none;
-                    font-size: 1.8rem;
-                    color: $white;
-                }
-                h3 {
-                    align-self: center;
-                    text-align: center;
-                    justify-self: center;
-                    font-size: 4rem;
-                    color: #972f43;
-                }
-                a {
-                    text-decoration: none;
-                    font-size: 1.8rem;
-                    color: #972f43;
-                    cursor: pointer;
-                }
+            p {
+                align-self: center;
+                text-align: center;
+                justify-self: center;
+                font-size: 2rem;
+                color: $mediumblue;
+            }
+            h2 {
+                align-self: center;
+                text-align: center;
+                justify-self: center;
+                font-size: 4rem;
+                color: #972f43;
+            }
+            li {
+                list-style-type: none;
+                font-size: 1.8rem;
+                color: $mediumblue;
+            }
+            h3 {
+                align-self: center;
+                text-align: center;
+                justify-self: center;
+                font-size: 4rem;
+                color: #972f43;
+            }
+            a {
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: #972f43;
+                cursor: pointer;
             }
         }
     }
