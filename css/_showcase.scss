@@ -9,7 +9,9 @@
         
         .top-container {
             display: flex;
+            height: 100vh;
             justify-content: center;
+            background-color: #111032;
         }
         
         .top-left {
@@ -17,28 +19,12 @@
             background-size: cover;
             display: flex;
             flex-direction: column;
-            transition: width .5s ease-in-out;
-            width: 49.95%;
-            height: 800px;
+            width: 60vw;
+            height: 100vh;
             overflow-x: hidden;
+            margin-left: 55vw;
             justify-content: center;
             align-content: center;
-            cursor: pointer;
-            h1 {
-                font-size: 3rem;
-                transition: all .5s ease-in-out;
-                color: $white;
-                align-self: center;
-            }
-            h2 {
-                font-size: 1.5rem;
-                transition: all .5s ease-in-out;
-                letter-spacing: 1px;
-                color: $white;
-                align-self: center;
-                padding: 0;
-                margin-bottom: -15px;
-            }
         }
         
         @media only screen and (max-width: 1000px) {
