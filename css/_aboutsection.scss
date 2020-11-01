@@ -2,9 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-flow: wrap;
-    background-image: url("../img/aboutback.bmp");
     background-color: $white;
-    height: 1200px;
+    min-height: fit-content;
     width: 100%;
     margin-top: -10px;
     padding-top: 0;
@@ -29,7 +28,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-image: url("../img/aboutback.bmp");
     background-color: $white;
     height: auto;
     width: 100%;
@@ -54,7 +52,6 @@
 .about-text {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/aboutback.bmp");
     background-color: $white;
     height: auto;
     width: 70%;
@@ -76,7 +73,7 @@
 
 .about-title {
     font-size: 6rem;
-    color: $white;
+    color: $mediumblue;
     margin-top: 1vh;
     margin-left: 4vw;
 }
@@ -96,7 +93,7 @@
     font-weight: 500;
     z-index: 2;
     margin-left: 80px;
-    color: $white;
+    color: $mediumblue;
     border-top: solid $darkred 2px;
 }
 
@@ -115,7 +112,7 @@
     font-size: 2rem;
     z-index: 2;
     margin-left: 80px;
-    color: $white;
+    color: $mediumblue;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -123,20 +120,5 @@
         font-size: 3rem;
         text-align: center;
         color: $white;
-    }
-}
-
-#techimg {
-    position: absolute;
-    opacity: .1;
-    top: 1000px;
-    z-index: 1;
-    height: 600px;
-    width: 75%;
-}
-
-@media only screen and (max-width: 1000px) {
-    #techimg {
-        display: none;
     }
 }

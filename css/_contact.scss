@@ -73,6 +73,7 @@
     }
     input:focus {
         outline: none;
+        border-bottom: 3px $lightred solid;
     }
     input::placeholder {
         color: $mediumblue;
@@ -197,6 +198,7 @@
         }
         input:focus {
             outline: none;
+            border-bottom: 6px $lightred solid;
         }
         input::placeholder {
             color: $mediumblue;
